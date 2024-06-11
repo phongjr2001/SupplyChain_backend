@@ -6,28 +6,21 @@ export const DataResponse = (isError: boolean, message: string, data?: any) => {
    }
 }
 
-export const DataTokenResponse = (isError: boolean, message: string, token: string, refreshToken: string) => {
-   return {
-      error: isError,
-      message,
-      token,
-      refreshToken
-   }
-}
-
 export class MessageResponse {
-   static APPROVE_ACCOUNT_SUCCESS = 'Add account succesfully.';
-   static NOT_ADMIN = 'Please login with admin acount.'
-   static SUCCESS = 'Success.';
-   static MISSING_INPUT = 'Missing input.';
-   static ACCOUNT_EXISTS = 'Account has been exists.';
-   static VERIFY_OTP = 'Please verify OTP has been sent via your email.';
-   static ACCOUNT_NO_EXISTS = 'Account not exists.';
-   static REGISTER_SUCCESS = 'Registry successfully.';
-   static WRONG_OTP = 'OTP code is not authentic.';
-   static WRONG_PASSWORD = 'Wrong password.';
-   static LOGIN_SUCCESS = 'Login successfully.';
-   static REVIEWED_ACCOUNT = 'Account is being reviewed, please wait.';
+   static ERROR_OCCURRED = 'Có lỗi xảy ra, vui lòng thử lại.';
+   static APPROVE_ACCOUNT_SUCCESS = 'Thêm người dùng thành công.';
+   static NOT_ADMIN = 'Vui lòng đăng nhập với tài khoản admin.';
+   static NOT_FARMER = 'Vui lòng đăng nhập với tài khoản farmer.';
+   static SUCCESS = 'Thành công.';
+   static MISSING_INPUT = 'Thiếu đầu vào.';
+   static ACCOUNT_EXISTS = 'Người dùng đã tồn tại.';
+   static VERIFY_OTP = 'Vui lòng nhập OTP đã gửi trong email.';
+   static ACCOUNT_NO_EXISTS = 'Người dùng không tồn tại.';
+   static REGISTER_SUCCESS = 'Đăng ký thành công!.';
+   static WRONG_OTP = 'OTP không chính xác.';
+   static WRONG_PASSWORD = 'Mật khâu không chính xác.';
+   static LOGIN_SUCCESS = 'Đăng nhập thành công.';
+   static REVIEWED_ACCOUNT = 'Đăng ký thành công. Tài khoản đang đợi phê duyệt';
    static NO_TOKEN = 'No token provided.';
    static UNAUTHORIZED = 'Unauthorized access.'
 }

@@ -31,20 +31,6 @@ const User = database.define('user', {
          notEmpty: true,
       }
    },
-   imageName: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-         notEmpty: true
-      }
-   },
-   imageURL: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-         notEmpty: true
-      }
-   },
    description: {
       type: DataTypes.STRING,
       allowNull: true,
@@ -81,5 +67,9 @@ const User = database.define('user', {
 }, {
    freezeTableName: true
 });
+
+// (async () => {
+//    await database.sync();
+// })();
 
 export default User;

@@ -1,7 +1,7 @@
 export enum roles {
    admin,
-   Farmer,
-   ThirdParty,
-   DeliveryHub,
-   Customer
+   farmer,
+   thirdparty,
+   deliveryhub,
+   customer
 }
