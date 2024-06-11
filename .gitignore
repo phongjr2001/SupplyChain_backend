@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+=======
+/node_modules
+.env
+/public
+>>>>>>> 0221216 (auth finish)

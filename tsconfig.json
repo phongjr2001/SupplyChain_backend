@@ -1,0 +1,14 @@
+<<<<<<< HEAD
+=======
+{
+   "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "strict": true, /* Enable all strict type-checking options. */
+      "skipLibCheck": true, /* Skip type checking all .d.ts files. */
+      "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
+      "resolveJsonModule": true,
+   }
+}
+>>>>>>> 0221216 (auth finish)
